@@ -24,8 +24,6 @@ export class Book {
   }
 }
 
-// let b = Book;
-
 export function addBook(book) {
   Book.addBook(book);
 }
@@ -46,10 +44,6 @@ const renderBook = (book) => {
   const button = document.createElement('button');
   button.className = 'bg-danger text-light border-0 d-block';
   button.textContent = 'Delete';
-
-  // button.addEventListener("click", () => {
-  //   removeBook(id);
-  // });
 
   tdId.innerHTML = id;
   tdTitle.innerHTML = title;
