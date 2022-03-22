@@ -4,23 +4,23 @@ const bookListDiv = document.getElementById('table');
 const formDiv = document.getElementById('form');
 const contactDiv = document.getElementById('contact');
 
-const  constructListPage = () => {
+const constructListPage = () => {
   bookListDiv.style.display = 'block';
   formDiv.style.display = 'none';
   contactDiv.style.display = 'none';
 
   renderBooks();
-}
+};
 const constructFormPage = () => {
   bookListDiv.style.display = 'none';
   formDiv.style.display = 'block';
   contactDiv.style.display = 'none';
-}
+};
 const constructContactPage = () => {
   bookListDiv.style.display = 'none';
   formDiv.style.display = 'none';
   contactDiv.style.display = 'block';
-}
+};
 
 const page = (page) => {
   switch (page) {
@@ -36,6 +36,6 @@ const page = (page) => {
     default:
       break;
   }
-}
+};
 
 export default page;
