@@ -12,7 +12,7 @@ const itemContact = document.getElementById('li-contact');
 
 const dateElement = document.getElementById('date');
 
-const date = DateTime.fromISO('2010-10-22T21:38:00');
+const date = DateTime.now();
 dateElement.textContent = date.toLocaleString(DateTime.DATETIME_MED);
 itemList.addEventListener('click', () => {
   page(0);
